@@ -5,7 +5,7 @@ jobs:
       - image: cimg/base:2021.04
         auth:
           username: systemlordlestat
-          password: DOCKERHUB_PASSWORD  # context / project UI env-var reference
+          password: $DOCKERHUB_PASSWORD  # context / project UI env-var reference
     steps:
       - checkout
       - run:
